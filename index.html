@@ -4,79 +4,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Su Zan | Android & AI Dev</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
     }
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Outfit', sans-serif; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans dark:bg-gray-900 dark:text-gray-100">  <!-- Header -->  <header class="bg-white dark:bg-gray-800 shadow p-6">
-    <div class="max-w-5xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Su Zan</h1>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">  <!-- Header -->  <header class="bg-white dark:bg-gray-800 shadow p-6 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Su Zan</h1>
       <div class="flex items-center gap-4">
         <button id="toggleDark" class="text-sm text-blue-600 dark:text-yellow-400">🌙 Toggle Dark</button>
-        <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Contact</a>
+        <a href="#contact" class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-4 py-2 rounded hover:from-purple-700 hover:to-blue-700">Contact</a>
       </div>
     </div>
-  </header>  <!-- Hero Section -->  <section class="py-16 text-center">
-    <h2 class="text-4xl font-bold mb-4">👋 Hey, I'm Su Zan</h2>
-    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
-      I build Android apps and AI-powered tools using Kotlin, Flutter, GPT, Firebase, and modern APIs.
+  </header>  <!-- Hero Section -->  <section class="py-20 text-center relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 opacity-20 blur-2xl">
+      <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_h4th9ofg.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    </div>
+    <h2 class="text-5xl font-bold mb-6">Hey, I'm <span class="text-blue-600">Su Zan</span></h2>
+    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+      I craft high-performance Android apps and futuristic AI tools powered by GPT, Firebase, and modern APIs.
     </p>
-    <a href="#projects" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">See My Work</a>
-  </section>  <!-- Projects -->  <section id="projects" class="max-w-5xl mx-auto px-6 py-12">
-    <h3 class="text-3xl font-bold mb-6">🚀 Featured Projects</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
-        <h4 class="text-xl font-semibold">AI Chatbot for Android</h4>
-        <p class="text-gray-600 dark:text-gray-300 mt-2">
-          A mobile GPT-powered assistant built in Kotlin, integrated with OpenAI API. Supports dynamic chat, themes, and local cache.
-        </p>
+    <a href="#projects" class="mt-8 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">View My Work</a>
+  </section>  <!-- Projects -->  <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+    <h3 class="text-4xl font-bold mb-10 text-center">🚀 Featured Projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 hover:scale-105 transition">
+        <h4 class="text-2xl font-semibold">AI Chatbot for Android</h4>
+        <p class="text-gray-600 dark:text-gray-300 mt-3">Kotlin app using OpenAI API for real-time chat, theming, and cache features.</p>
         <a href="https://github.com/yourusername/ai-chatbot-android" target="_blank" class="text-blue-500 mt-4 inline-block">🔗 View on GitHub</a>
-      </div><div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
-    <h4 class="text-xl font-semibold">Voice Note Expense Tracker</h4>
-    <p class="text-gray-600 dark:text-gray-300 mt-2">
-      Android app using Whisper API to transcribe and track your expenses via voice input. Syncs with Firebase.
-    </p>
-    <a href="https://github.com/yourusername/voice-expense-tracker" target="_blank" class="text-blue-500 mt-4 inline-block">🔗 View on GitHub</a>
-  </div>
-</div>
-
-  </section>  <!-- Services -->  <section class="bg-white dark:bg-gray-800 py-12 px-6">
-    <div class="max-w-5xl mx-auto">
-      <h3 class="text-3xl font-bold mb-6">🛠️ What I Do</h3>
-      <ul class="list-disc ml-6 space-y-2 text-gray-700 dark:text-gray-300">
-        <li>🤖 Build GPT & AI-powered Android apps (Kotlin, Flutter)</li>
-        <li>📱 Create smart tools using OpenAI, Whisper, Firebase</li>
-        <li>⚙️ Develop automation bots, scripts, and dashboards</li>
-        <li>🚀 Launch & monetize apps via Play Store, AdMob, or SaaS</li>
-      </ul>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 hover:scale-105 transition">
+        <h4 class="text-2xl font-semibold">Voice Note Expense Tracker</h4>
+        <p class="text-gray-600 dark:text-gray-300 mt-3">Voice-based finance tracking using Whisper + Firebase.</p>
+        <a href="https://github.com/yourusername/voice-expense-tracker" target="_blank" class="text-blue-500 mt-4 inline-block">🔗 View on GitHub</a>
+      </div>
     </div>
-  </section>  <!-- Blog Section -->  <section id="blog" class="max-w-5xl mx-auto px-6 py-12">
-    <h3 class="text-3xl font-bold mb-6">📝 Latest Blog Posts</h3>
-    <div class="space-y-4">
-      <article class="bg-white dark:bg-gray-800 p-4 rounded shadow">
-        <h4 class="text-xl font-semibold">How I Built an AI Chatbot for Android</h4>
-        <p class="text-gray-600 dark:text-gray-300">Step-by-step guide with code, Firebase setup, and GPT integration. <a href="#" class="text-blue-500">Read more →</a></p>
-      </article>
-      <article class="bg-white dark:bg-gray-800 p-4 rounded shadow">
-        <h4 class="text-xl font-semibold">Using Whisper API for Voice Apps</h4>
-        <p class="text-gray-600 dark:text-gray-300">Learn how to convert speech to text with AI. <a href="#" class="text-blue-500">Read more →</a></p>
-      </article>
+  </section>  <!-- Services -->  <section class="bg-gradient-to-r from-blue-50 to-purple-100 dark:from-gray-800 dark:to-gray-900 py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-4xl font-bold mb-10">🛠️ What I Do</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-gray-700 dark:text-gray-300">
+        <div>🤖 GPT-powered Android apps</div>
+        <div>🎙️ Voice tools with Whisper API</div>
+        <div>📦 Firebase + LLM backends</div>
+        <div>⚙️ Automations and AI bots</div>
+      </div>
     </div>
-  </section>  <!-- Contact -->  <section id="contact" class="py-16 bg-gray-100 dark:bg-gray-900 text-center">
-    <h3 class="text-3xl font-bold">📬 Let's Connect</h3>
-    <p class="text-gray-700 dark:text-gray-300 mt-2 mb-6">Available for freelance, collabs, and cool projects!</p>
-    <div class="space-y-2">
+  </section>  <!-- Blog Section -->  <section id="blog" class="max-w-6xl mx-auto px-6 py-20">
+    <h3 class="text-4xl font-bold mb-10 text-center">📝 My Blog</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow">
+        <h4 class="text-xl font-semibold mb-2">Building an AI Chatbot on Android</h4>
+        <p class="text-gray-600 dark:text-gray-300">How I integrated OpenAI into Kotlin with real-time features. <a href="#" class="text-blue-500">Read →</a></p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow">
+        <h4 class="text-xl font-semibold mb-2">Whisper + Firebase Voice Apps</h4>
+        <p class="text-gray-600 dark:text-gray-300">Build your own speech-to-text tool with ease. <a href="#" class="text-blue-500">Read →</a></p>
+      </div>
+    </div>
+  </section>  <!-- Contact -->  <section id="contact" class="bg-white dark:bg-gray-800 py-20 text-center">
+    <h3 class="text-4xl font-bold mb-6">📬 Let’s Collaborate</h3>
+    <p class="text-gray-600 dark:text-gray-300 mb-4">Available for freelance projects, remote roles, and partnerships.</p>
+    <div class="text-lg space-y-2">
       <p>📧 <a href="mailto:you@example.com" class="text-blue-600 hover:underline">you@example.com</a></p>
       <p>🔗 <a href="https://github.com/yourusername" target="_blank" class="text-blue-600 hover:underline">GitHub</a></p>
       <p>💼 <a href="https://linkedin.com/in/yourname" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a></p>
     </div>
   </section>  <!-- Footer -->  <footer class="text-center text-gray-500 dark:text-gray-400 text-sm py-6">
-    © 2025 Su Zan • Built with Tailwind CSS & ChatGPT 🚀
+    © 2025 Su Zan • Crafted with Tailwind, Lottie & ChatGPT ⚡️
   </footer>  <script>
-    const toggle = document.getElementById('toggleDark');
-    toggle.addEventListener('click', () => {
+    document.getElementById('toggleDark').addEventListener('click', () => {
       document.documentElement.classList.toggle('dark');
     });
   </script></body>
