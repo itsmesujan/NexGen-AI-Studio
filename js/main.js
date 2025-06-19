@@ -1,1 +1,0 @@
-console.log('NexGen AI Studio site loaded');
